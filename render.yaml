@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: levelup-backend
-    runtime: node
-    rootDir: .
-    buildCommand: npm install
-    startCommand: node server.js

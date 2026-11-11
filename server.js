@@ -6,7 +6,7 @@ const { generateChallenge, generateChallenges } = require("./llmService");
 const pool = require("./db");
 
 const app = express();
-const port = 3000;
+const port = Number(process.env.PORT || 3000);
 
 app.use(cors());
 app.use((request, response, next) => {
@@ -147,7 +147,7 @@ app.patch("/api/challenges/:id", async (request, response) => {
 });
 
 if (require.main === module) {
-  app.listen(port, () => {
+  app.listen(port, "0.0.0.0", () => {
     console.log(`LEVELUP backend listening on port ${port}.`);
   });
 }

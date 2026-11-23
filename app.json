@@ -7,6 +7,7 @@
     "icon": "./assets/images/icon.png",
     "scheme": "levelup",
     "userInterfaceStyle": "automatic",
+    "platforms": ["ios", "android", "web"],
     "ios": {
       "icon": "./assets/expo.icon"
     },
